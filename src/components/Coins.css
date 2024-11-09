@@ -1,0 +1,118 @@
+/* Global styles */
+
+body {
+  background-color: #121212;
+  color: #e0e0e0;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+}
+
+.coins-table {
+  width: 100%;
+  background-color: #1f1f1f;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  margin-top: 2rem;
+}
+
+.table-header {
+  display: flex;
+  background-color: #333;
+  padding: 1rem;
+  font-weight: bold;
+  color: #fdd835;
+}
+
+.header-cell {
+  flex: 1;
+  text-align: left;
+  padding: 0 10px;
+}
+
+.table-row {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid #444;
+  transition: background-color 0.3s ease;
+}
+
+.table-row:hover {
+  background-color: #2a2a2a;
+}
+
+.row-cell {
+  flex: 1;
+  text-align: left;
+  padding: 0 10px;
+  color: #e0e0e0;
+  display: flex;
+  align-items: center;
+}
+
+.coin-logo {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.profit {
+  color: #4caf50;
+}
+
+.loss {
+  color: #f44336;
+}
+
+.search-bar {
+  margin: 2rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.search-input {
+  height: 2rem;
+  width: 20rem;
+  padding-left: 0.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  background-color: #1f1f1f;
+  color: #e0e0e0;
+}
+
+.btns {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.btn {
+  height: 2rem;
+  width: 6rem;
+  background-color: #fdd835;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  color: #121212;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #ffc107;
+}
+
+/* Responsive design for smaller screens */
+@media only screen and (max-width: 768px) {
+  .table-header, .table-row {
+    flex-direction: column;
+    padding: 1rem 0.5rem;
+  }
+
+  .header-cell, .row-cell {
+    padding: 5px 0;
+    text-align: left;
+  }
+}
